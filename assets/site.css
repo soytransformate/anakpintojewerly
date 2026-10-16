@@ -1,0 +1,83 @@
+:root{--cream:#F8F5EF;--ivory:#FFFCF7;--sand:#EDE5DA;--ink:#3E4A61;--ink-soft:#687184;--lavender:#9880A2;--lavender-light:#F1EAF3;--gold:#E8C27B;--line:#E5DFD8;--shadow:0 24px 70px rgba(54,57,72,.09)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Buvera","Jost",Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.65}
+a{color:inherit}button,a{touch-action:manipulation}
+a:focus-visible{outline:3px solid var(--lavender);outline-offset:4px}
+.skip{position:absolute;left:-999px;top:1rem;padding:.55rem 1rem;background:white;z-index:100}
+.skip:focus{left:1rem}
+.shell{max-width:1160px;padding:0 clamp(20px,5vw,64px);margin:0 auto}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(248,245,239,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.topbar .shell{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.wordmark{text-decoration:none;font-weight:600;letter-spacing:.08em;white-space:nowrap;font-size:1.06rem}
+.wordmark span{font-size:.7rem;display:block;letter-spacing:.25em;font-weight:400;color:var(--lavender);margin-top:-3px}
+.topnav{display:flex;align-items:center;flex-wrap:wrap;gap:clamp(12px,2.5vw,30px)}
+.topnav a{text-decoration:none;font-size:.85rem;font-weight:500}
+.topnav a:hover,.text-link:hover{color:#735785}
+.kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.23em;color:#816d8f;font-weight:600}
+h1,h2,h3{font-family:"Buvera","Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.1;letter-spacing:-.025em}
+h1{font-size:clamp(3rem,6.5vw,6rem);margin:.8rem 0 1.2rem}
+h2{font-size:clamp(2.15rem,4vw,3.8rem);margin:.65rem 0 1.15rem}
+h3{font-size:clamp(1.5rem,2.8vw,2.3rem);margin:.5rem 0}
+p{margin:0 0 1.15rem} .lead{font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--ink-soft);max-width:620px}
+.script{font-family:"Angello","Sacramento",cursive;color:#92749C;font-size:clamp(1.8rem,3.6vw,2.8rem);line-height:1.25}
+.btn{display:inline-flex;justify-content:center;align-items:center;text-align:center;gap:.7rem;min-height:49px;padding:12px 23px;border:1px solid transparent;background:var(--ink);border-radius:100px;color:white;font-size:.91rem;text-decoration:none;font-weight:500;transition:transform .18s,background .18s}
+.btn:hover{transform:translateY(-2px);background:#28374e}.btn.secondary{background:transparent;color:var(--ink);border-color:#AAB0BC}.btn.secondary:hover{background:white}
+.text-link{font-size:.9rem;font-weight:600;letter-spacing:.03em;text-decoration-thickness:1px;text-underline-offset:6px}
+.hero{position:relative;overflow:hidden;padding:clamp(72px,10vw,150px) 0 105px;background:linear-gradient(125deg,#FFFCF8 0%,#F7F2EA 54%,#F2EDF4 100%)}
+.hero:after{content:"";position:absolute;border:1px solid rgba(152,128,162,.18);border-radius:50%;width:min(60vw,650px);height:min(60vw,650px);right:-19vw;top:-240px;pointer-events:none}
+.hero .shell{position:relative;z-index:1}
+.hero .copy{max-width:800px}
+.hero .inline-actions{margin-top:29px;display:flex;gap:13px;flex-wrap:wrap}
+.hero .signature{margin:34px 0 0}
+.section{padding:clamp(65px,9vw,116px) 0}
+.section-heading{max-width:750px;margin-bottom:34px}
+.two-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.brand-card{position:relative;isolation:isolate;min-height:420px;overflow:hidden;padding:clamp(28px,4vw,52px);border:1px solid rgba(152,128,162,.13);border-radius:18px;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:space-between}
+.brand-card:before{content:"";width:300px;height:300px;border-radius:50%;position:absolute;right:-115px;top:-100px;z-index:-1;background:rgba(255,255,255,.36)}
+.brand-card .card-copy{max-width:410px}.brand-card .card-copy p{color:#555c6b;max-width:340px}
+.brand-card .card-label{text-transform:uppercase;font-size:.72rem;letter-spacing:.2em;color:#6E6484;font-weight:600}
+.brand-card.transform{background:linear-gradient(155deg,#F3EAF2,#FDF7F2)}
+.brand-card.jewelry{background:linear-gradient(155deg,#F9F4E7,#F0E7EF)}
+.brand-card .card-footer{border-top:1px solid rgba(62,74,97,.17);padding-top:19px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand-card .arrow{font-size:1.65rem;line-height:1}
+.about{background:#FFFFFF}
+.about-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(30px,7vw,110px);align-items:center}
+.about .quote{border-left:2px solid var(--gold);padding-left:27px;font-size:clamp(1.4rem,2.8vw,2.5rem);font-family:Georgia,serif;line-height:1.35}
+.about .copy p{max-width:680px;color:#647087}
+.closing{background:var(--ink);color:#FFFDF9;padding:65px 0}
+.closing .shell{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.closing p{color:#E4E8EE;max-width:560px}
+.closing .btn{background:var(--gold);color:#293247}
+.closing .btn:hover{background:#F6D89C}
+.site-footer{border-top:1px solid var(--line);padding:31px 0;color:#687184;background:var(--ivory);font-size:.85rem}
+.site-footer .shell{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.site-footer a{text-underline-offset:4px}
+.page-hero{padding:clamp(70px,9vw,120px) 0 85px;background:linear-gradient(140deg,#FAF6F8,#EEE5F0)}
+.page-hero .lead{max-width:720px}
+.tag-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.tag{font-size:.83rem;border:1px solid #CEC0D2;padding:9px 15px;border-radius:30px;color:#625670;background:rgba(255,255,255,.35)}
+.features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.feature{padding:clamp(24px,4vw,46px);border:1px solid var(--line);border-radius:15px;background:white}
+.feature p{color:#687184}
+.note{font-size:.93rem;color:#697286}
+@media(max-width:760px){.topbar .shell{padding-top:15px;padding-bottom:15px;flex-wrap:wrap}.topnav{width:100%;gap:12px 20px}.hero{padding:68px 0 74px}.two-cards,.about-grid,.features{grid-template-columns:1fr}.brand-card{min-height:345px}.closing .shell{align-items:flex-start}.topnav a{font-size:.81rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+/* Identidad oficial Ana K. Pinto · Manual Maestro 2026 */
+:root{--cream:#FDF9EF;--ivory:#FFFFFF;--sand:#DEDEDE;--ink:#003352;--ink-soft:#003352;--lavender:#A891B0;--lavender-light:#FDF9EF;--gold:#E6C28C;--line:#DEDEDE}
+body{background:var(--cream);color:var(--ink);font-family:"Buvera","Avenir Next",Arial,sans-serif}
+.topbar{background:rgba(253,249,239,.95)}
+.page-hero{background:linear-gradient(135deg,#FDF9EF,rgba(168,145,176,.17))}
+.kicker{color:#003352}
+.lead,.about .copy p,.feature p,.note{color:#003352}
+.btn{border-radius:4px;background:#003352;color:#FFFFFF}.btn:hover{background:#003352;opacity:.9}
+.topnav a:hover,.text-link:hover{color:#003352}
+.feature{background:#FFFFFF;border-color:#DEDEDE}
+.about{background:#FFFFFF}
+.closing{background:#003352}.closing .btn{background:#E6C28C;color:#003352}
+.script{color:#003352}
+.brand-image{display:flex;align-items:center;text-decoration:none;max-width:205px;min-width:125px}
+.brand-image img{display:block;width:100%;height:auto;object-fit:contain}
+.hero-brand{max-width:270px;margin-bottom:32px}
+.hero-brand img{display:block;width:100%;height:auto}
+@media(max-width:760px){.brand-image{max-width:180px}.hero-brand{max-width:220px}}

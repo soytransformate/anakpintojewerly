@@ -37,8 +37,8 @@ exports.handler = async (event) => {
         },
       }],
       phone_number_collection: { enabled: true },
-      success_url: `${process.env.URL}/?pago=exito`,
-      cancel_url: `${process.env.URL}/?pago=cancelado`,
+      success_url: `${process.env.URL}/jewelry/?pago=exito`,
+      cancel_url: `${process.env.URL}/jewelry/?pago=cancelado`,
     });
 
     return { statusCode: 200, body: JSON.stringify({ url: session.url }) };
