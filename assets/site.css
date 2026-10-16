@@ -63,3 +63,21 @@ p{margin:0 0 1.15rem} .lead{font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--in
 .note{font-size:.93rem;color:#697286}
 @media(max-width:760px){.topbar .shell{padding-top:15px;padding-bottom:15px;flex-wrap:wrap}.topnav{width:100%;gap:12px 20px}.hero{padding:68px 0 74px}.two-cards,.about-grid,.features{grid-template-columns:1fr}.brand-card{min-height:345px}.closing .shell{align-items:flex-start}.topnav a{font-size:.81rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+/* Identidad oficial Ana K. Pinto · Manual Maestro 2026 */
+:root{--cream:#FDF9EF;--ivory:#FFFFFF;--sand:#DEDEDE;--ink:#003352;--ink-soft:#003352;--lavender:#A891B0;--lavender-light:#FDF9EF;--gold:#E6C28C;--line:#DEDEDE}
+body{background:var(--cream);color:var(--ink);font-family:"Buvera","Avenir Next",Arial,sans-serif}
+.topbar{background:rgba(253,249,239,.95)}
+.page-hero{background:linear-gradient(135deg,#FDF9EF,rgba(168,145,176,.17))}
+.kicker{color:#003352}
+.lead,.about .copy p,.feature p,.note{color:#003352}
+.btn{border-radius:4px;background:#003352;color:#FFFFFF}.btn:hover{background:#003352;opacity:.9}
+.topnav a:hover,.text-link:hover{color:#003352}
+.feature{background:#FFFFFF;border-color:#DEDEDE}
+.about{background:#FFFFFF}
+.closing{background:#003352}.closing .btn{background:#E6C28C;color:#003352}
+.script{color:#003352}
+.brand-image{display:flex;align-items:center;text-decoration:none;max-width:205px;min-width:125px}
+.brand-image img{display:block;width:100%;height:auto;object-fit:contain}
+.hero-brand{max-width:270px;margin-bottom:32px}
+.hero-brand img{display:block;width:100%;height:auto}
+@media(max-width:760px){.brand-image{max-width:180px}.hero-brand{max-width:220px}}
